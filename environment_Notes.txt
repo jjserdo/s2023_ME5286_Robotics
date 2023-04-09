@@ -1,0 +1,90 @@
+name: robot3
+channels:
+- conda-forge
+dependencies:
+- python
+- numpy
+- matplotlib
+- pandas 
+- opencv
+- tensorflow
+- minimalmodbus
+- pip
+- pip:
+  - robodk
+
+
+
+## [[4/8St]] Using VR Comp for training
+[0744] Solving environment still not done since around [2100] <-
+[0758] Created an environment **robot_v2** using Anaconda Navigator
+	- <TRIED> installed **tensorflow-gpu** instead of **tensorflow**
+		- needs python version earlier than 3.11
+	- installed all dependencies except
+		- **minimalmodbus**
+		- **robodk through **pip**
+[0803] Created an environment **robot_v3** using Anaconda Navigator
+	- uses **python=3.8**
+	- installed **tensorflow-gpu** instead of **tensorflow**
+	- installed all dependencies except
+		- **minimalmodbus**
+		- **robodk** through **pip**
+[0815] Tested environment **robot_v3**
+[0815] Lab9_test.py can't import keras
+[0816] installed **keras** using Anaconda Navigator
+	- <???> will this still become slow
+[0818] installed **keras-gpu** using Anaconda Navigator
+[0821] Lab9_test.py shows version of tf and keras
+	- gpu is not being detected
+[0829] created new environment **robot_v4** using 
+	- https://github.com/ContinuumIO/anaconda-issues/issues/12194
+	- **python=3.8**
+	- **tensorflow-gpu=2.3**
+      - **tensorflow==2.3=mkl_py38h1fcfbd6_0**
+	- added other dependencies
+[0834] Lab9_test.py now shows 1 GPU
+[0834] Lab9_JJ_v1.py ran
+[0848] Still shows Epoch 1/100
+[0911] super slow, GPU at 91 percent and CPU at 53 %
+[0915] forced stop the process
+[0918] created new environment **robot_v5** without tensorflow-gpu
+	- python=3.10
+	- all but robodk and minimalmodbus
+[0918] deleted **robot_v2**
+// hmm might just go back to robot_v2 but just deleted lmao  :(
+[0925] Lab9_JJ_v1.py ran
+	- much faster as it finished 1st epoch on [0929]
+		- based on this then can finish within 4*100 = 400 minutes = around 7 hours
+		- 226 seconds
+	- 2nd epoch [0932]
+		- 206 seconds
+		- new estimate 6 hours
+	- 3rd epoch [0936]
+		- 209 seconds
+		- new estimate is 5 hours and 58 minutes
+		- expected finish is [1523]
+[0937] JJ left to go study and will check at around [1238]
+[1134] JJ returned because studying makes nose hurt
+	- 38 epoch done at [1136]
+		- previous epochs done at around 205 seconds  
+		- new estimate 5.7 hours or 5 hours 42 mins
+		- new expected finish is [1508]
+[1526] JJ returned and found out that the weights were not save HAHAHA
+	- 6 more hours baby
+	- accuracy is at 99.61% tho so that's pretty crazy
+[2028] JJ returned and at epoch 89
+[2159] JJ returned and weights are saved and around 1gB
+[2200] created Training_updates and saved to hardrive
+	- transfered this file to hardrive as well
+	- accuracy for test and val already high even at epoch 4 >95% 
+
+
+
+
+
+
+
+
+
+
+
